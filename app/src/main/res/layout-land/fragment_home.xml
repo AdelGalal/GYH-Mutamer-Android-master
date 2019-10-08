@@ -1,0 +1,147 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/partial_no_data"/>
+
+    <include layout="@layout/partial_loading"/>
+
+    <LinearLayout
+        android:id="@+id/vData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/smoke_white"
+
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <com.glide.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPrays"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+
+
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_prayer_time"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivPrayTime"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:padding="8dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_pray"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:id="@+id/tvCurrentPray"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            tools:text="Magreb"/>
+
+                        <TextView
+                            android:id="@+id/tvCurrentPrayTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="6:12"/>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp">
+
+                        <com.timqi.sectorprogressview.ColorfulRingProgressView
+
+                            android:id="@+id/prgPrayRemainingTime"
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:alpha="0.5"
+                            app:bgColor="@color/smoke_white"
+                            app:fgColor="@color/colorPrimary"
+                            app:percent="75"
+                            app:startAngle="0"
+                            app:strokeWidth="4dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/time_left"
+                                android:textSize="11sp"/>
+
+                            <TextView
+                                android:id="@+id/tvPrayRemainingTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                tools:text="09:45"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</FrameLayout>

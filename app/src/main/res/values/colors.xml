@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorAccent">#FFC107</color>
+    <color name="colorAccentDark">#6D4C41</color>
+    <color name="colorAccentExtraDark">#5D4037</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="button_background">#ffd6d7d7</color>
+    <color name="transparent">#00000000</color>
+    <color name="orange">#FF9800</color>
+    <color name="red">#d50000</color>
+    <color name="green">#2E7D32</color>
+    <color name="blue">#304FFE</color>
+    <color name="some_red">#C51162</color>
+    <color name="purple">#AA00FF</color>
+    <color name="deep_orange">#FF5722</color>
+    <color name="darkGreen">#004D40</color>
+    <color name="chart_one">#d9508a</color>
+    <color name="chart_two">#fe9507</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="lightGray">#ffd6d7d7</color>
+    <color name="darkYellow">#FFD600</color>
+    <color name="brown">#B71C1C</color>
+    <color name="darkGray">#696969</color>
+    <color name="darkBlue">#134896</color>
+    <color name="magenta">#600F37</color>
+    <color name="alpha_white">#faffffff</color>
+    <color name="smoke_white">#FAFAFA</color>
+    <color name="redColorPrimary">#f44336</color>
+    <color name="colorAlphaPrimary">#41009688</color>
+    <color name="alphaColorPrimary">#DA009688</color>
+    <color name="indicator_unselected">#4D000000</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="black_trans80">#33000000</color>
+    <color name="tabtxtcolor">#FFFFFF</color>
+    <color name="tabtxtcolor1">#8DCBA9</color>
+    <color name="page_background_color">#F2F0EA</color>
+    <color name="homelisttxtcolor">#B0B0B0</color>
+    <color name="homelisttxtcolor1">#333333</color>
+    <color name="listseparator_olor">#E5E5E5</color>
+
+    <color name="homebannertxtcolor">#FFFFFF</color>
+
+    <color name="textcolor1">#FFFFFF</color>
+    <color name="textcolor2">#30A062</color>
+    <color name="list_onclick_color">#EEEEEE</color>
+    <color name="list_bg_color">#FFFFFF</color>
+
+    <color name="prayerlist1">#F2F0EA</color>
+    <color name="prayerlist2">#F9F8F5</color>
+    <color name="prayertextcolor">#71706F</color>
+    <color name="prayertextcolor1">#333333</color>
+
+    <color name="weather_txt_color">#AFAFAF</color>
+    <color name="download_txt_color">#30A062</color>
+    <color name="color_gray">#929292</color>
+    <color name="status_bar">#ff26834F</color>
+</resources>

@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/smoke_white">
+
+    <include layout="@layout/partial_loading"/>
+
+    <LinearLayout android:id="@+id/view_no_data"
+                  xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+
+
+                  android:orientation="vertical"
+
+                  android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/app_banner"
+            android:scaleType="fitXY"
+            android:src="@drawable/finale"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/no_login_description"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="normal"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/login"/>
+    </LinearLayout>
+
+
+    <include layout="@layout/partial_mutamer_info"/>
+
+
+</FrameLayout>

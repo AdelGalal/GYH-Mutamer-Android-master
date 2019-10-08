@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="url_read_notification" translatable="false">https://mutameradmin.eumrasubs.com/api/pilgrims/readNotification</string>
+    <string name="url_update_data" translatable="false">https://mutameradmin.eumrasubs.com/api/pilgrims/updateData</string>
+    <string name="url_panic" translatable="false">https://mutameradmin.eumrasubs.com/api/hajj/SendPanic</string>
+
+    <string name="url_fetch_profile" translatable="false">https://mutameradmin.eumrasubs.com/api/pilgrims/profile</string>
+    <string name="url_company_logo" translatable="false">https://eumra.com/Attachments_UMRA1440/UOLogos/%d.jpg</string>
+    <string name="url_login" translatable="false">https://mutameradmin.eumrasubs.com/token</string>
+
+
+    <string name="url_pilgrim_image" translatable="false">https://eumra.com/Attachments_UMRA1440/MutamerPhotos/%d/%d.Jpeg</string>
+
+
+
+    <string name="url_exhange" translatable="false">https://openexchangerates.org/api/latest.json?app_id=9f2c211b5c76434fb9a161e64494a833&amp;base=%s&amp;symbols=%s</string>
+    <string name="url_gama" translatable="false">http://www.gama-ksa.com</string>
+
+
+
+    <string name="url_slide_image" translatable="false">https://mutameradmin.eumrasubs.com/uploads/sliders/%s.png</string>
+    <string name="url_duaa_image" translatable="false">https://mutameradmin.eumrasubs.com/uploads/duaa/%d.png</string>
+    <string name="url_duaa_path" translatable="false">https://mutameradmin.eumrasubs.com/uploads/duaa/</string>
+    <string name="url_place" translatable="false">https://mutameradmin.eumrasubs.com/uploads/places/</string>
+    <string name="url_report_issue" translatable="false">https://mutameradmin.eumrasubs.com/api/pilgrims/reportIssue</string>
+</resources>

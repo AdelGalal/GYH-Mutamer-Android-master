@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/general">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="@string/home"
+                    />
+
+                <item
+                    android:id="@+id/nav_notifications"
+                    android:icon="@drawable/ic_notifications"
+                    android:title="@string/response"
+                    app:actionLayout="@layout/menu_counter"/>
+                <item
+                    android:id="@+id/nav_issues"
+                    android:icon="@drawable/ic_issues"
+                    android:title="@string/issues"/>
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="@string/content"
+        >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_duaa"
+
+                    android:icon="@drawable/ic_prays"
+                    android:title="@string/duaa"/>
+
+                <item
+                    android:id="@+id/nav_islamic_places"
+
+                    android:icon="@drawable/ic_places"
+
+                    android:title="@string/islamic_places"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/locations_and_places">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_near_by"
+                    android:icon="@drawable/ic_near_by"
+                    android:title="@string/near_by"/>
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_gallery"
+                    android:title="@string/nav_my_gallery"/>
+
+                <item
+                    android:id="@+id/nav_my_info"
+                    android:icon="@drawable/ic_my_info"
+                    android:title="@string/nav_my_info"/>
+                <item
+                    android:id="@+id/nav_my_program"
+                    android:icon="@drawable/ic_package"
+                    android:title="@string/nav_my_program"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/utilities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_services"
+                    android:icon="@drawable/ic_services"
+                    android:title="@string/services"/>
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_settings"
+                    android:title="@string/settings"/>
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

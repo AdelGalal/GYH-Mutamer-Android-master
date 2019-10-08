@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/vData"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="16dp"
+        android:layout_marginBottom="32dp"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="8dp"
+            android:textAlignment="viewStart"
+
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/colorPrimary"
+            tools:text="Mutamer Name here"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="75dp"
+                            android:layout_height="75dp">
+
+
+                            <ImageView
+                                android:id="@+id/iv_mutamer_image"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_margin="4dp"
+                                android:contentDescription="@string/mutamer_image"
+                                android:scaleType="centerCrop"/>
+
+                            <ImageButton
+                                android:id="@+id/ibCamera"
+                                style="?attr/buttonBarButtonStyle"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:alpha="0.7"
+                                android:src="@drawable/ic_camera"
+                                android:visibility="gone"/>
+
+                            <ImageButton
+                                android:id="@+id/ibViewImage"
+                                style="?attr/buttonBarButtonStyle"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_below="@+id/ibCamera"
+                                android:layout_marginTop="8dp"
+                                android:alpha="0.8"
+                                android:src="@drawable/ic_zoom"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivGender"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:contentDescription="@string/mutamer_gender"
+                                    android:src="@drawable/ic_age"/>
+
+
+                                <TextView
+                                    android:id="@+id/tv_age"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_weight="1"
+
+                                    tools:text="313"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/imageView3"
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@drawable/ic_blood"/>
+
+                                <TextView
+                                    android:id="@+id/tvBloodType"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+
+                                    tools:text="AB+"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivCountry"
+                                    android:layout_width="24dp"
+
+                                    android:layout_height="24dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+                                    android:src="@mipmap/sa_flag"/>
+
+                                <TextView
+                                    android:id="@+id/tv_address"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginStart="8dp"
+
+                                    tools:text="Jeddah"/>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+
+                android:text="@string/officials"
+                android:textAppearance="@android:style/TextAppearance.Medium"
+                android:textColor="@color/colorPrimary"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/passport_number"
+                        android:src="@drawable/ic_passport"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/passport_number"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_passport_number"
+                            style="@style/pilgrimInfoLabel"
+
+                            tools:text="1234"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/visa_number"
+                        android:src="@drawable/ic_visa"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/visa_number"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_visa_number"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/mofa_number"
+                        android:src="@drawable/ic_mofa"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mofa_number"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_mofa_number"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/moi_number"
+                        android:src="@drawable/ic_moi"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moi_number"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_moi_number"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:text="@string/umra_company"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_umrah_company"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top"
+                        android:contentDescription="@string/umra_company_logo"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_agent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_umrah_company"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_umrah_address"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/phone"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_umrah_phone"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_call_umra_company"
+                                style="@style/pilgrimInfoImageButton"
+
+                                android:contentDescription="@string/call_umra_company"
+                                android:src="@drawable/ic_call"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/email_address"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_umrah_email_address"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_email_umra_company"
+                                style="@style/pilgrimInfoImageButton"
+                                android:src="@drawable/ic_alternate_email"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/web_site"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_umrah_website"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_umra_company_website"
+                                style="@style/pilgrimInfoImageButton"
+                                android:src="@drawable/ic_navigation"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="8dp"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+
+            android:text="@string/agent"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/colorPrimary"/>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_agent"
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="top"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_agent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tv_agent"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/responsible_person"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_agent_responsible"
+                            style="@style/pilgrimInfoLabel"
+                            tools:text="1234"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/phone"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_agent_phone"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_call_agent_phone"
+                                style="@style/pilgrimInfoImageButton"
+                                android:src="@drawable/ic_call"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/mobile_number"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_agent_mobile_number"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_email_agent_mobile"
+
+                                style="@style/pilgrimInfoImageButton"
+                                android:src="@drawable/ic_call"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/email_address"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_agent_email"
+                                    style="@style/pilgrimInfoLabel"
+                                    tools:text="1234"/>
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/btn_agent_email"
+                                style="@style/pilgrimInfoImageButton"
+                                android:src="@drawable/ic_alternate_email"/>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

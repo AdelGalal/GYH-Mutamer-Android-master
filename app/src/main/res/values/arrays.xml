@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="languages">
+        <item>@string/english</item>
+        <item>@string/arabic</item>
+    </array>
+    <array name="units">
+        <item>@string/metric</item>
+        <item>@string/us</item>
+    </array>
+    <array name="weather_units">
+        <item>@string/c</item>
+        <item>@string/f</item>
+    </array>
+    <array name="dirs">
+        <item>@string/mecca</item>
+        <item>@string/madeina</item>
+        <item>@string/others</item>
+    </array>
+    <array name="services_types">
+        <item>@string/na</item>
+        <item>@string/transportation</item>
+        <item>@string/transportations</item>
+        <item>@string/mazarat</item>
+    </array>
+    <array name="places_types">
+        <item>hospital</item>
+        <item>transportations</item>
+        <item>police</item>
+        <item>restaurant</item>
+        <item>bank</item>
+        <item>shopping_mall</item>
+    </array>
+
+    <array name="IssueStatus">
+        <item>@string/open</item>
+        <item>@string/pending</item>
+        <item>@string/closed</item>
+    </array>
+    <array name="prays_icons">
+        <item>@drawable/ic_fajr</item>
+        <item>@drawable/ic_fajr</item>
+        <item>@drawable/ic_thohr</item>
+        <item>@drawable/ic_asr</item>
+        <item>@drawable/ic_magreb</item>
+        <item>@drawable/ic_ishaa</item>
+        <item>@drawable/ic_fajr</item>
+    </array>
+    <array name="calculation_methods">
+        <item>@string/mecca_method</item>
+        <item>@string/muslim_method</item>
+        <item>@string/islamic_method</item>
+        <item>@string/egypt_method</item>
+    </array>
+    <array name="notifications_methods">
+        <item>@string/alert</item>
+        <item>@string/azan</item>
+        <item>@string/vibrate</item>
+        <item>@string/mute</item>
+    </array>
+    <array name="places_names">
+        <item>@string/bookmarks</item>
+        <item>@string/hospitality</item>
+        <item>@string/transportations</item>
+        <item>@string/services</item>
+        <item>@string/restaurants</item>
+        <item>@string/banking</item>
+        <item>@string/mosques</item>
+        <item>@string/markets</item>
+    </array>
+    <array name="notification_methods">
+        <item>@string/none</item>
+        <!--<item>@string/sdefault</item>-->
+        <!--<item>@string/beep</item>-->
+        <item>@string/adhan</item>
+        <!--item>@string/custom</item-->
+    </array>
+
+
+    <string-array name="weather">
+        <item>@string/c</item>
+        <item>@string/f</item>
+    </string-array>
+    <string-array name="boundries" >
+        <item>@string/mina</item>
+        <item>@string/muzdalifah</item>
+        <item>@string/arafat</item>
+        <item>@string/makkah</item>
+        <item>@string/madinah</item>
+    </string-array>
+    <string name="open">Sent</string>
+    <string name="pending">Sent</string>
+    <string name="closed">Closed</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="hospitality">Hospitality</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="banking">Banking</string>
+    <string name="mosques">Mosques</string>
+    <string name="markets">Markets</string>
+    <string name="na" translatable="false">N/A</string>
+</resources>
